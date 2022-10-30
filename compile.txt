@@ -1,0 +1,6 @@
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/home/chen/work/opensource/gmssl/build/_install
+make
+make test
+make install
