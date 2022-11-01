@@ -6,6 +6,7 @@ all:
 	cc sm2_sign_demo.c ../../build/_install/lib/libgmssl.a -o sm2_sign_demo
 	cc sm2_sign_ctx_demo.c ../../build/_install/lib/libgmssl.a -o sm2_sign_ctx_demo
 	cc sm2_encrypt_demo.c ../../build/_install/lib/libgmssl.a -o sm2_encrypt_demo
+	cc hjk_crypto.c ../../build/_install/lib/libgmssl.a -o hjk_crypto_demo
 
 clear:
 	rm -fr sm2_keygen_demo
@@ -15,4 +16,5 @@ clear:
 	rm -fr sm2_sign_demo
 	rm -fr sm2_sign_ctx_demo
 	rm -fr sm2_encrypt_demo
+	rm -fr hjk_crypto_demo
 
