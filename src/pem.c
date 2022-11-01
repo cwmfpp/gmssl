@@ -39,6 +39,8 @@ int pem_write(FILE* fp, const char* name, const uint8_t* data, size_t datalen)
 	ret += fprintf(fp, "-----BEGIN %s-----\n", name);
 	ret += fprintf(fp, "%s", (char *)b64);
 	ret += fprintf(fp, "-----END %s-----\n", name);
+	free(b64);
+	b64 = NULL;
 	//return ret;
 	return 1;
 }
